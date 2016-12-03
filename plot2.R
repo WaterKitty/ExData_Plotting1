@@ -14,5 +14,6 @@ h_data <- h_data %>%
 	select(V1,V3)
 
 ## Plot the graph:
-
+png("plot2.png", width=480, height=480)
 with(h_data, plot(V1,V3, type="l", xlab = "", ylab = "Global Active Power (kilowatts)"))
+dev.off()
